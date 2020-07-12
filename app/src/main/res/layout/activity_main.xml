@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/silver"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        />
+
+    <EditText
+        android:id="@+id/celsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="48.5dp"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="100px"
+        android:layout_toRightOf="@id/celsiusLabel"
+        android:layout_below="@id/title"
+        android:inputType="text" />
+    <TextView
+        android:layout_below="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/celsiusLabel"
+        android:layout_alignBaseline="@id/celsius"
+        android:text="Celsius"
+        android:layout_marginLeft="50px"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/fahrenheit"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/fahrenheitLabel"
+        android:layout_below="@id/celsiusLabel"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="100px"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fahrenheitLabel"
+        android:layout_alignBaseline="@id/fahrenheit"
+        android:text="Fahrenheit"
+        android:layout_below="@id/celsius"
+        android:layout_marginLeft="50px"
+
+        />
+
+
+
+    <Button
+        android:id="@+id/CalculerCF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C->F"
+        android:layout_below="@id/fahrenheit"
+        android:layout_margin="30dp"
+        android:background="@color/gray"
+
+        />
+
+    <Button
+        android:id="@+id/CalculerFC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F->C"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/fahrenheit"
+        android:layout_margin="30dp"
+        android:background="@color/gray"
+
+
+        />
+</RelativeLayout>
